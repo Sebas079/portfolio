@@ -1,0 +1,115 @@
+/*General*/
+*{
+  box-sizing: border-box;
+}
+html,body{
+  font-family: ;
+  width: 100%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+header{
+  background-color: black;
+  padding: 5%;
+}
+.box{
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+
+}
+.box h1{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.box nav{
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.box li{
+  display: inline;
+  padding-left: 10px;
+  
+}
+.box a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.box a:hover{
+  color: #ca780d;
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+.box a:active{
+  color:red;
+}
+.box img{
+  width: 8vw;
+  height: auto;
+  border-radius: 100%;
+  position: absolute;
+}
+main{
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  
+}
+
+.main h2{
+  font-size: 1.8rem;
+  color: #000000;
+  padding: 5%;
+  width: 70%;
+}
+.main p{
+  font-size: 1.3rem;
+  text-align: start;
+  width: 70%;
+}
+.main div{
+ box-shadow: #000000;
+}
+.main img{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  width: 10rem;
+  height: auto;
+  border: 5px solid #000000;
+  border-radius: 15%;
+  
+}
+ .socialMedia ul{
+    position: relative;
+    top: 10vw;
+    right: 5vw;
+    left: 5vw;
+    bottom: 1vw;
+}
+.socialMedia img{
+  width: 3rem;
+  height: auto;
+  border-radius: 100%;
+}
+.socialMedia li{
+  display: inline ;
+  margin: 5% 5%;
+  width: 25%;
+  box-sizing: border-box;
+}
+.socialMedia a{
+  text-decoration: none;
+}
+.socialMedia img:hover{
+  cursor: pointer;
+  width: 4.5rem;
+  height: auto;
+}
+.socialMedia img:active{
+  border: 5px solid red;
+}
