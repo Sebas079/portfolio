@@ -5,6 +5,7 @@
 html,body{
   width: 100%;
   font-family:'Montserrat', sans-serif;
+  background: linear-gradient(#ffffff 40%,#ff0000,#000000);
 
 }
 /*Encabezadp*/
@@ -139,14 +140,17 @@ main{
 }
 .aboutMe img{
   width: 15vw;
-  height: auto;
-  position: absolute;
-  right: 10%;
+  
+  float:right;
+  margin: 0 20px 20px 0;
+ 
+
 }
 /*skills*/
  section.skill,
  section.hobbie{
    width: 100%;
+   color: #ffffff;
   
 }
 .skill h2,
@@ -186,7 +190,7 @@ main{
 .hobbie img{
   border: 2px solid #000000;
   border-radius: 5px;
-  width: 1px;
+  width: 200px;
   height: auto;
   margin: 1vw;
   transition: 1s;
