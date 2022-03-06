@@ -5,9 +5,11 @@
 html,body{
   width: 100%;
   font-family:'Montserrat', sans-serif;
-  background: linear-gradient(#ffffff 40%,#ff0000,#000000);
+  background:linear-gradient(#ffffff 25%,#ff0000,#0000ff);
+
 
 }
+
 /*Encabezadp*/
 header{
   background-color: black;
@@ -87,25 +89,29 @@ main{
   
 }
 /*Social media*/
- .socialMedia ul{
+ .socialMedia ul
+ {
     position: relative;
     top: 10vw;
     right: 5vw;
     left: 5vw;
     bottom: 1vw;
 }
-.socialMedia img{
+.socialMedia img,
+.copyright img{
   width: 3rem;
   height: auto;
   border-radius: 100%;
 }
-.socialMedia li{
+.socialMedia li,
+.copyright li{
   display: inline ;
   margin: 5% 5%;
   width: 25%;
   box-sizing: border-box;
 }
-.socialMedia a{
+.socialMedia a,
+.copyright a{
   text-decoration: none;
 }
 .socialMedia img:hover{
@@ -148,17 +154,26 @@ main{
 }
 /*skills*/
  section.skill,
- section.hobbie{
-   width: 100%;
+ section.hobbie,
+ section.proyectos,
+ section.formacion,
+ section.contacto,
+ footer.copyright{
+   width: 940px;
+   margin: 0 auto;
    color: #ffffff;
+  
+  
   
 }
 .skill h2,
-.hobbie h2{
+.hobbie h2,
+.proyectos h2,
+.formacion h2{
   text-align: left;
   font-size: 2rem;
-  text-decoration: underline;
-  padding: 1rem;
+  text-decoration: none;
+  padding: 1rem; 
 }
 .skill ul,
 .hobbie ul{
@@ -173,8 +188,8 @@ main{
 .skill li,
 .hobbie li{
   display: inline;
-  margin: 5% 5% 15% 5%;
-  padding: 1rem;
+  margin: 2% 1%;
+  padding: .5rem;
  
 }
 
@@ -182,18 +197,18 @@ main{
 {
   border: 2px solid #000000;
   border-radius: 5px;
-  width: 200px;
+  width: 15vw;
   height: auto;
-  margin: 1vw;
+  margin: 1%;
   transition: 1s;
 }
 .hobbie img{
   border: 2px solid #000000;
   border-radius: 5px;
-  width: 200px;
+  width: 15vw;
   height: auto;
   margin: 1vw;
-  transition: 1s;
+  transition: 0.6s;
 
 }
 .skill img:hover,
@@ -201,4 +216,118 @@ main{
   transform: scale(1.2);
   border: 5px solid red;
 
+}
+
+/*Seccion proyectos*/
+
+section.proyectos
+{
+  width: 100%;
+  margin: 0 auto
+  padding:1rem
+}
+.proyectos div,
+.formacion div{
+  box-sizing: border-box;
+}
+.proyectos li,
+.formacion li{
+  display: inline;
+}
+
+.proyectos img
+{
+    width: 30vw;
+    margin:2%;
+    height: auto;
+    border-radius: 10px;
+  
+}
+.proyectos a{
+ float: right; 
+  background: #000000;
+  color:red;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 15vw;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: .8rem;
+  transition: 0.6s;
+  
+}
+.proyectos a:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  
+}
+.proyectos a:active{
+  border: 5px solid red;
+  font-weight: 800;
+  background: #fff;
+}
+.formacion img{
+  width: 25%;
+    margin: 4%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*seccion contacto*/
+section.contacto{
+ /* background: #000000;*/
+}
+.contacto legend{
+  margin: 1%;
+}
+.contacto input,
+.contacto textarea{
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.contacto img{
+  width: 25vw;
+  margin: 2%;
+  float: left;
+}
+ input.send{
+  font-size: 1rem;
+  transition: 1s;
+  margin: 1% 25%;
+
+}
+.send:hover{
+  transform: scale(1.2);
+  background: #ca780d;
+  color: #fff;
+
+  
+
+}
+
+/*Section footer*/
+
+.copyright h6{
+  margin-top: 10%;
+  text-align: center;
+}
+
+.copyright img{
+  width: 2rem;
+  height: auto;
+  border-radius: 100% ;
+}
+.copyright ul{
+  margin: 1% 12%;
+  padding: 2%;
+}
+/*media query*/
+@media screen and (max-width:480px){
+  body{
+    background: #ca780d;
+  }
 }
